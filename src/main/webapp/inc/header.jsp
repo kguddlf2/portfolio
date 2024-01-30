@@ -9,10 +9,8 @@
             <a class="display-6 text-decoration-none text-dark" href="/main/main.jsp">Logo</a>
         </div>
         <%
-            if (sessionID == null) {
+            if (sessionID == null) { // 로그인 안 됐을 때
         %>
-        <!-- 로그인 안 됐을 때 -->
-        <!-- 로그인 -->
         <div class="offset-6 col-2">
             <a class="text-decoration-none text-dark" href="/member/login.jsp">로그인</a>
         </div>
@@ -31,10 +29,8 @@
         </div>
         <%
             }
-            else {
+            else { // 로그인 됐을 때
         %>
-        <!-- 로그인 됐을 때 -->
-        <!-- 아이디, 로그아웃 -->
         <div class="offset-6 col-2">
             <a class="text-decoration-none text-dark" href="/main/myPage.jsp"><%=sessionID%></a>
         </div>
