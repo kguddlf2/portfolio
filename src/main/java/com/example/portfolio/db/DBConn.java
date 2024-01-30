@@ -9,8 +9,8 @@ public class DBConn {
         final String driver = "org.mariadb.jdbc.Driver";
         final String dbName = "portfolio";
         final String dbURL = "jdbc:mariadb://localhost:3306/" + dbName;
-        final String dbUser = "root";
-        final String dbPassword = "0000";
+        final String dbUser = "";
+        final String dbPassword = "";
 
         Class.forName(driver);
         conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
